@@ -10,6 +10,9 @@ var deviceWidth = Dimensions.get('window').width
 class TaskList extends Component {
     constructor(props){
         super(props)
+		this.state = ({
+            showProgress : true
+        })
     }
     componentDidMount() {
         this.props.getTasks()
